@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Pantry Gaming Store</title>
+
+  <!-- Bootstrap CSS -->
+  <link 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+    rel="stylesheet" 
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+    crossorigin="anonymous"
+    >
+
+  <!-- Custom CSS -->
+  <style>
+    body {
+      background-color: #f2f2f2;
+      font-family: Arial, sans-serif;
+    }
+
+    header {
+      background-color: #212529;
+      color: white;
+      padding: 30px 0;
+      margin-bottom: 30px;
+    }
+
+    .product-card {
+      height: 100%;
+      border: 1px solid #cccccc;
+      border-radius: 0;
+    }
+
+    .product-image-box {
+      height: 210px;
+      overflow: hidden;
+      background-color: white;
+      border-bottom: 1px solid #dddddd;
+    }
+
+    .product-image {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      padding: 8px;
+      transition: transform 0.3s;
+    }
+
+    /* Image hover effect required by the task */
+    .product-image:hover {
+      transform: scale(1.08);
+    }
+
+    .price {
+      color: #198754;
+      font-weight: bold;
+    }
+
+    .footer-logo {
+      width: 75px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Pixel Pantry</h1>
+      <p class="mb-0">Gaming and streaming accessories</p>
+    </div>
+  </header>
+
+  <!-- Products -->
+  <main class="container mb-4">
+    <h2 class="mb-3">Products</h2>
+
+    <!-- Bootstrap grid -->
+    <div class="row g-3">
+      <!-- Product 1 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card">
+          <div class="product-image-box">
+            <img src="assets/webcam.jpg" class="img-fluid product-image" alt="Elgato Facecam webcam">
+          </div>
+          <div class="card-body">
+            <h3 class="h5">HD Webcam</h3>
+            <p>A clear webcam for streaming and video calls.</p>
+            <p class="price">$129.99</p>
+            <button class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card">
+          <div class="product-image-box">
+            <img src="assets/controller.jpg" class="img-fluid product-image" alt="Colorful Xbox controller">
+          </div>
+          <div class="card-body">
+            <h3 class="h5">Gaming Controller</h3>
+            <p>A colorful controller for PC and Xbox games.</p>
+            <p class="price">$54.99</p>
+            <button class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card">
+          <div class="product-image-box">
+            <img src="assets/headset.jpg" class="img-fluid product-image" alt="Black gaming headset">
+          </div>
+          <div class="card-body">
+            <h3 class="h5">Gaming Headset</h3>
+            <p>A headset with a microphone for games and chat.</p>
+            <p class="price">$69.99</p>
+            <button class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card">
+          <div class="product-image-box">
+            <img src="assets/keyboard.jpg" class="img-fluid product-image" alt="RGB gaming keyboard">
+          </div>
+          <div class="card-body">
+            <h3 class="h5">RGB Keyboard</h3>
+            <p>A compact keyboard with colorful backlit keys.</p>
+            <p class="price">$79.99</p>
+            <button class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card">
+          <div class="product-image-box">
+            <img src="assets/light.jpg" class="img-fluid product-image" alt="Colorful wall light panels">
+          </div>
+          <div class="card-body">
+            <h3 class="h5">Wall Light Panels</h3>
+            <p>Color-changing lights for a gaming room.</p>
+            <p class="price">$89.99</p>
+            <button class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card">
+          <div class="product-image-box">
+            <img src="assets/microphone.jpg" class="img-fluid product-image" alt="Two desktop microphones">
+          </div>
+          <div class="card-body">
+            <h3 class="h5">USB Microphone</h3>
+            <p>A desktop microphone for streaming and recording.</p>
+            <p class="price">$59.99</p>
+            <button class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card">
+          <div class="product-image-box">
+            <img src="assets/mouse.jpg" class="img-fluid product-image" alt="Colorful wireless gaming mouse">
+          </div>
+          <div class="card-body">
+            <h3 class="h5">Wireless Mouse</h3>
+            <p>A lightweight gaming mouse with RGB lighting.</p>
+            <p class="price">$34.99</p>
+            <button class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card">
+          <div class="product-image-box">
+            <img src="assets/mousepad.jpg" class="img-fluid product-image" alt="Large RGB mouse pad">
+          </div>
+          <div class="card-body">
+            <h3 class="h5">RGB Mouse Pad</h3>
+            <p>A large mouse pad with a lighted border.</p>
+            <p class="price">$24.99</p>
+            <button class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card">
+          <div class="product-image-box">
+            <img src="assets/mug.jpg" class="img-fluid product-image" alt="Game Over coffee mug">
+          </div>
+          <div class="card-body">
+            <h3 class="h5">Game Over Mug</h3>
+            <p>A gaming mug for coffee, tea, or other drinks.</p>
+            <p class="price">$14.99</p>
+            <button class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="col-12 col-sm-6 col-md-4">
+        <div class="card product-card">
+          <div class="product-image-box">
+            <img src="assets/speaker.jpg" class="img-fluid product-image" alt="RGB computer speakers">
+          </div>
+          <div class="card-body">
+            <h3 class="h5">Computer Speakers</h3>
+            <p>Small speakers with RGB lights for a desktop.</p>
+            <p class="price">$39.99</p>
+            <button class="btn btn-primary">Buy</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer and horizontal contact form -->
+  <footer class="bg-dark text-white mt-4 py-4">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-2 mb-3 mb-md-0">
+          <img src="assets/stickers.jpg" class="img-fluid footer-logo" alt="Company logo">
+        </div>
+
+        <div class="col-md-10">
+          <h2 class="h5">Contact Us</h2>
+          <form class="row g-2 align-items-end">
+            <div class="col-md-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name">
+            </div>
+
+            <div class="col-md-3">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email">
+            </div>
+
+            <div class="col-md-3">
+              <label for="phone" class="form-label">Phone</label>
+              <input type="tel" class="form-control" id="phone">
+            </div>
+
+            <div class="col-md-3">
+              <button type="submit" class="btn btn-success">Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript -->
+  <script 
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+    crossorigin="anonymous"></script>
+</body>
+</html>
